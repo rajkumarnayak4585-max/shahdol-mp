@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAHDOL - The Heart of Madhya Pradesh</title>
+<meta name="description" content="शहडोल मध्य प्रदेश का इतिहास, पर्यटन, संस्कृति, मंदिर, प्रकृति और संपूर्ण जानकारी।">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f3f7f7;color:#183047}
+header{
+ background:#082b49;color:white;padding:18px 7%;
+ display:flex;justify-content:space-between;align-items:center;
+ position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:12px
+}
+.logo{font-size:23px;font-weight:bold;color:#7ce6c2}
+nav{display:flex;gap:17px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#7ce6c2}
+.hero{
+ min-height:540px;display:flex;align-items:center;justify-content:center;
+ text-align:center;color:white;padding:50px 20px;
+ background:linear-gradient(#001a32a8,#001a32b8),
+ url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600') center/cover;
+}
+.hero h1{font-size:clamp(38px,7vw,70px);margin-bottom:18px}
+.hero p{font-size:19px;line-height:1.7;max-width:750px;margin:auto}
+.btn{display:inline-block;margin-top:25px;padding:14px 25px;
+ background:#13a77b;color:white;text-decoration:none;border-radius:8px}
+section{padding:65px 7%}
+.heading{text-align:center;font-size:32px;color:#07547a;margin-bottom:15px}
+.sub{text-align:center;color:#647b88;margin-bottom:35px;line-height:1.7}
+.stats,.cards,.info-grid{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px
+}
+.stat,.card,.info{
+ background:white;border-radius:14px;padding:22px;
+ box-shadow:0 5px 20px #18304712
+}
+.stat{text-align:center;border-bottom:4px solid #12a77b}
+.stat h2{font-size:30px;color:#079b75;margin-bottom:8px}
+.card{overflow:hidden;padding:0}
+.card img{width:100%;height:190px;object-fit:cover}
+.card-content{padding:20px}
+.card h3{color:#07547a;margin-bottom:10px}
+.card p,.info p{line-height:1.7;color:#61717c;font-size:14px}
+.info h3{color:#078b70;margin-bottom:12px}
+.about{background:#e6f2ef}
+.about p{max-width:950px;margin:auto;line-height:1.9;font-size:16px}
+ul{padding-left:20px;line-height:2;color:#526b77}
+.map{width:100%;height:350px;border:0;border-radius:14px}
+.banner{background:#073b58;color:white;text-align:center}
+.banner h2{font-size:30px;margin-bottom:15px}
+.banner p{line-height:1.8}
+footer{background:#071f35;color:white;text-align:center;padding:30px 15px;line-height:2}
+footer a{color:#7ce6c2}
+.search{display:block;width:100%;max-width:500px;margin:0 auto 30px;
+ padding:14px;border:1px solid #b9d2d4;border-radius:9px;font-size:16px}
+@media(max-width:600px){
+ header{justify-content:center}
+ nav{justify-content:center}
+ .hero{min-height:440px}
+ section{padding:48px 5%}
+ .heading{font-size:27px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">🌿 SHAHDOL</div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#history">History</a>
+  <a href="#places">Tourism</a>
+  <a href="#culture">Culture</a>
+  <a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<div class="hero" id="home">
+ <div>
+  <h1>WELCOME TO SHAHDOL</h1>
+  <p>The Heart of Madhya Pradesh</p>
+  <p>प्रकृति, संस्कृति, इतिहास और सुंदर पर्यटन स्थलों की धरती शहडोल में आपका स्वागत है।</p>
+  <a class="btn" href="#about">Explore Shahdol ↓</a>
+ </div>
+</div>
+
+<section>
+ <h2 class="heading">शहडोल एक नजर में</h2>
+ <p class="sub">मध्य प्रदेश के उत्तर-पूर्वी भाग में स्थित खूबसूरत जिला।</p>
+ <div class="stats">
+  <div class="stat"><h2>5,610</h2><p>क्षेत्रफल (वर्ग किमी)*</p></div>
+  <div class="stat"><h2>10,66,063</h2><p>जनसंख्या (2011)</p></div>
+  <div class="stat"><h2>886</h2><p>गाँव (2011)</p></div>
+  <div class="stat"><h2>391</h2><p>ग्राम पंचायतें</p></div>
+ </div>
+ <p class="sub" style="margin-top:15px">*क्षेत्रफल और जनसंख्या के आँकड़े सरकारी जिला पोर्टल पर प्रकाशित विवरण के अनुसार हैं।</p>
+</section>
+
+<section class="about" id="about">
+ <h2 class="heading">शहडोल का परिचय</h2>
+ <p>
+ शहडोल मध्य प्रदेश का एक महत्वपूर्ण जिला है। यह राज्य के उत्तर-पूर्वी हिस्से में स्थित है।
+ शहडोल जिला मुख्यालय होने के साथ-साथ शहडोल संभाग का मुख्यालय भी है।
+ यहाँ हरे-भरे जंगल, पहाड़, नदियाँ, ऐतिहासिक मंदिर और प्राकृतिक सुंदरता देखने को मिलती है।
+ यहाँ हिंदी और स्थानीय बोलियाँ बोली जाती हैं।
+ शहडोल अपनी प्राकृतिक संपदा, कोयला संसाधनों, आदिवासी संस्कृति और ऐतिहासिक धरोहर के लिए जाना जाता है।
+ </p>
+</section>
+
+<section id="history">
+ <h2 class="heading">शहडोल का इतिहास</h2>
+ <p class="sub">एक ऐतिहासिक और सांस्कृतिक विरासत</p>
+ <div class="info-grid">
+  <div class="info">
+   <h3>नाम की कहानी</h3>
+   <p>स्थानीय मान्यता के अनुसार शहडोल का नाम सोहागपुर गाँव के शाहडोलवा अहीर के नाम से जुड़ा है।</p>
+  </div>
+  <div class="info">
+   <h3>प्राचीन विरासत</h3>
+   <p>इस क्षेत्र में गुप्त काल और कलचुरी काल से जुड़े पुराने अवशेष और ऐतिहासिक स्थल मिलते हैं।</p>
+  </div>
+  <div class="info">
+   <h3>1948</h3>
+   <p>रियासतों के विलय के बाद जिला मुख्यालय उमरिया से शहडोल स्थानांतरित किया गया।</p>
+  </div>
+  <div class="info">
+   <h3>15 अगस्त 2003</h3>
+   <p>जिले के विभाजन के बाद वर्तमान प्रशासनिक क्षेत्र में बदलाव हुआ।</p>
+  </div>
+ </div>
+</section>
+
+<section id="places" class="about">
+ <h2 class="heading">शहडोल के प्रसिद्ध पर्यटन स्थल</h2>
+ <p class="sub">यहाँ के मंदिर, झरने, प्राकृतिक स्थल और ऐतिहासिक धरोहर।</p>
+
+ <input class="search" id="search" type="text"
+ placeholder="🔍 पर्यटन स्थल खोजें...">
+
+ <div class="cards" id="placeList">
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=700" alt="मंदिर">
+   <div class="card-content">
+    <h3>विराटेश्वर मंदिर</h3>
+    <p>सोहागपुर बाणगंगा में स्थित भगवान शिव का प्रसिद्ध ऐतिहासिक मंदिर। इसका निर्माण लगभग 950 से 1050 ईस्वी के बीच माना जाता है।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700" alt="प्राकृतिक स्थल">
+   <div class="card-content">
+    <h3>सरसी आइलैंड</h3>
+    <p>प्राकृतिक सुंदरता और शांत वातावरण वाला पर्यटन स्थल। यहाँ नाव से पहुँचा जाता है।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=700" alt="जंगल">
+   <div class="card-content">
+    <h3>घाटी डोंगरी</h3>
+    <p>वन और पहाड़ी दृश्यों के लिए जाना जाने वाला प्राकृतिक एवं ऐतिहासिक क्षेत्र।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=700" alt="प्रकृति">
+   <div class="card-content">
+    <h3>क्षीर सागर</h3>
+    <p>शहडोल से लगभग 22 किलोमीटर दूर स्थित प्राकृतिक सुंदरता वाला स्थान।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=700" alt="मंदिर">
+   <div class="card-content">
+    <h3>पचमठा मंदिर</h3>
+    <p>सिंहपुर गाँव के पास स्थित प्रसिद्ध धार्मिक स्थल।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=700" alt="जल">
+   <div class="card-content">
+    <h3>बाणसागर डैम</h3>
+    <p>सोन नदी पर बना बहुउद्देशीय नदी घाटी परियोजना का महत्वपूर्ण बाँध।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=700" alt="मंदिर">
+   <div class="card-content">
+    <h3>बूढ़ी देवी मंदिर</h3>
+    <p>शहडोल क्षेत्र का प्रसिद्ध ऐतिहासिक और धार्मिक मंदिर।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=700" alt="प्राकृतिक दृश्य">
+   <div class="card-content">
+    <h3>भठिया देवी मंदिर</h3>
+    <p>माँ सिंहवाहिनी देवी का प्रसिद्ध धार्मिक स्थल।</p>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=700" alt="गुफा">
+   <div class="card-content">
+    <h3>लखबरिया गुफाएँ</h3>
+    <p>शहडोल के पास स्थित ऐतिहासिक और धार्मिक महत्व वाला स्थान।</p>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<section id="administration">
+ <h2 class="heading">प्रशासनिक जानकारी</h2>
+ <p class="sub">जिले के प्रमुख प्रशासनिक क्षेत्र</p>
+ <div class="info-grid">
+  <div class="info">
+   <h3>उपखंड</h3>
+   <p>ब्यौहारी, जयसिंहनगर, सोहागपुर और जैतपुर।</p>
+  </div>
+  <div class="info">
+   <h3>ब्लॉक</h3>
+   <p>ब्यौहारी, जयसिंहनगर, सोहागपुर, गोहपारू और बुढ़ार।</p>
+  </div>
+  <div class="info">
+   <h3>तहसील</h3>
+   <p>ब्यौहारी, जयसिंहनगर, सोहागपुर, गोहपारू, बुढ़ार और जैतपुर।</p>
+  </div>
+  <div class="info">
+   <h3>ग्राम पंचायत</h3>
+   <p>जिले में 391 ग्राम पंचायतें दर्ज हैं।</p>
+  </div>
+ </div>
+</section>
+
+<section id="culture" class="about">
+ <h2 class="heading">शहडोल की संस्कृति और परंपरा</h2>
+ <div class="info-grid">
+  <div class="info">
+   <h3>आदिवासी संस्कृति</h3>
+   <p>इस क्षेत्र में आदिवासी समुदायों की परंपराएँ, लोकगीत, नृत्य और रीति-रिवाज सांस्कृतिक पहचान का हिस्सा हैं।</p>
+  </div>
+  <div class="info">
+   <h3>बाणगंगा मेला</h3>
+   <p>जनवरी में आयोजित होने वाला प्रसिद्ध मेला। इसकी शुरुआत 1895 में रीवा के महाराजा गुलाब सिंह के समय हुई थी।</p>
+  </div>
+  <div class="info">
+   <h3>स्थानीय भोजन</h3>
+   <p>स्थानीय अनाज, कुटकी की खीर और क्षेत्रीय पारंपरिक व्यंजन यहाँ की खानपान संस्कृति का हिस्सा हैं।</p>
+  </div>
+  <div class="info">
+   <h3>भाषाएँ</h3>
+   <p>हिंदी के साथ बघेली और अन्य स्थानीय बोलियों का प्रयोग होता है।</p>
+  </div>
+ </div>
+</section>
+
+<section id="economy">
+ <h2 class="heading">शहडोल की अर्थव्यवस्था और संसाधन</h2>
+ <div class="info-grid">
+  <div class="info">
+   <h3>कोयला उद्योग</h3>
+   <p>शहडोल क्षेत्र कोयला संसाधनों के लिए जाना जाता है। खनन क्षेत्र की अर्थव्यवस्था का महत्वपूर्ण हिस्सा है।</p>
+  </div>
+  <div class="info">
+   <h3>कृषि</h3>
+   <p>ग्रामीण क्षेत्रों में धान, गेहूँ, मक्का और अन्य फसलों की खेती की जाती है।</p>
+  </div>
+  <div class="info">
+   <h3>वन संपदा</h3>
+   <p>साल और मिश्रित वन इस क्षेत्र की प्राकृतिक संपदा का महत्वपूर्ण हिस्सा हैं।</p>
+  </div>
+  <div class="info">
+   <h3>व्यापार</h3>
+   <p>कृषि उत्पाद, स्थानीय बाजार, छोटे उद्योग और सेवाएँ रोजगार तथा व्यापार के अवसर प्रदान करते हैं।</p>
+  </div>
+ </div>
+</section>
+
+<section id="education" class="about">
+ <h2 class="heading">शिक्षा और स्वास्थ्य</h2>
+ <div class="info-grid">
+  <div class="info">
+   <h3>शिक्षा</h3>
+   <p>शहडोल में सरकारी और निजी विद्यालय, कॉलेज तथा अन्य शैक्षणिक संस्थान उपलब्ध हैं।</p>
+  </div>
+  <div class="info">
+   <h3>स्वास्थ्य</h3>
+   <p>बिरसा मुंडा शासकीय चिकित्सा महाविद्यालय एवं अस्पताल सहित स्वास्थ्य सेवाएँ उपलब्ध हैं।</p>
+  </div>
+  <div class="info">
+   <h3>रोजगार</h3>
+   <p>कृषि, खनन, शिक्षा, स्वास्थ्य, व्यापार और सरकारी सेवाएँ रोजगार के प्रमुख क्षेत्र हैं।</p>
+  </div>
+ </div>
+</section>
+
+<section id="transport">
+ <h2 class="heading">शहडोल कैसे पहुँचें?</h2>
+ <div class="info-grid">
+  <div class="info">
+   <h3>🚆 रेल मार्ग</h3>
+   <p>शहडोल रेलवे स्टेशन प्रमुख शहरों से रेल मार्ग द्वारा जुड़ा हुआ है।</p>
+  </div>
+  <div class="info">
+   <h3>🚌 सड़क मार्ग</h3>
+   <p>बस और सड़क मार्ग से मध्य प्रदेश के कई शहरों से शहडोल पहुँचा जा सकता है।</p>
+  </div>
+  <div class="info">
+   <h3>✈️ हवाई मार्ग</h3>
+   <p>सरकारी जिला पोर्टल के अनुसार निकटतम हवाई अड्डा जबलपुर है, जो लगभग 143 किलोमीटर दूर है।</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <h2 class="heading">शहडोल का नक्शा</h2>
+ <p class="sub">शहडोल शहर को Google Maps पर देखें।</p>
+ <iframe class="map"
+ src="https://maps.google.com/maps?q=Shahdol%20Madhya%20Pradesh&t=&z=11&ie=UTF8&iwloc=&output=embed"
+ loading="lazy" title="Shahdol Map"></iframe>
+</section>
+
+<section class="banner" id="contact">
+ <h2>Explore Incredible Shahdol</h2>
+ <p>शहडोल की प्राकृतिक सुंदरता, इतिहास और संस्कृति को जानें और इस खूबसूरत जिले की विरासत को आगे बढ़ाएँ।</p>
+ <a class="btn" href="https://shahdol.nic.in/" target="_blank">Official Shahdol Website ↗</a>
+ <a class="btn" href="https://www.google.com/maps/search/Shahdol+Madhya+Pradesh/" target="_blank">Open Google Maps ↗</a>
+</section>
+
+<footer>
+ <h2>🌿 SHAHDOL</h2>
+ <p>The Heart of Madhya Pradesh</p>
+ <p>Website Created by Raj Kumar Nayak</p>
+ <p>© 2026 Shahdol Information Website</p>
+ <p><a href="https://shahdol.nic.in/" target="_blank">Government District Portal</a></p>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll("#placeList .card");
+
+search.addEventListener("input", function(){
+ const value = this.value.toLowerCase();
+ cards.forEach(card => {
+  card.style.display = card.innerText.toLowerCase().includes(value)
+    ? "" : "none";
+ });
+});
+</script>
+
+</body>
+</html>
